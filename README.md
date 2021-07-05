@@ -1,7 +1,7 @@
 # YouTube Music Playlist Restore
 Easily restore your YouTube Music Playlists from a Google Takeout.
 
-## Setup
+## First-time setup
 1. Download the code
 2. Follow the "Copy Authentication Headers" section of [ytmusicapi/setup](https://ytmusicapi.readthedocs.io/en/latest/setup.html)
 3. Run "setup.py" in CMD and follow the instructions there.
