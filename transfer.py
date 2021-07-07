@@ -4,7 +4,10 @@ import os
 import csv
 import fnmatch
 
-ytmusic = YTMusic('headers_auth.json')
+try:
+    ytmusic = YTMusic('headers_auth.json')
+except:
+    print('[FATAL] Could not load the auth file! Create it with ./setup.py')
 
 root = "playlists"
 
@@ -23,19 +26,19 @@ for file in os.listdir(root):
                     items.append(line[0])
         try:
             playlistId = ytmusic.create_playlist(title, description, visibility.upper())
-            print('[ OK ] Created playlist "' + title + '" with description "' + description + '"')
+            print(f'[ OK ] Created playlist "{title} with description {description}')
+        except Exception as e:
+            print(f'[WARN] Failed to create playlist {title}! Here is the error message:')
+            print(str(e))
+        else:
             for item in items:
                 try:
                     ytmusic.add_playlist_items(playlistId, [item])
+                except:
+                    print('[WARN] Failed to add song! Is it private or removed?')
+                else:
                     try:
                         song = ytmusic.get_song(item)
                         print('[ OK ] Added song "' + song['videoDetails']['title'] + '"!')
                     except:
                         print('[ OK ] Added song!')
-                except:
-                    print('[WARN] Failed to add song! Is it private or removed?')
-        except Exception as e:
-            print('[WARN] Failed to create playlist "' + title + '"!')
-            print('========== EXCEPTION ==========')
-            print(str(e))
-            print('======== END EXCEPTION ========')
