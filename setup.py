@@ -4,7 +4,7 @@ from jinja2 import Template
 template_path = 'headers_auth.json_template'
 out_path = 'headers_auth.json'
 
-cookie = input("Paste your cookie here:")
+cookie = input('Paste your cookie here:')
 
 try:
     file = open(template_path, 'r')

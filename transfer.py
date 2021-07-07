@@ -7,9 +7,9 @@ import fnmatch
 try:
     ytmusic = YTMusic('headers_auth.json')
 except:
-    print('[FATAL] Could not load the auth file! Create it with ./setup.py')
+    print('Could not load the auth file! Create it by following the "First-time setup" section of the README.')
 
-root = "playlists"
+root = 'playlists'
 
 for file in os.listdir(root):
     if fnmatch.fnmatch(file, '*.csv'):
@@ -39,6 +39,6 @@ for file in os.listdir(root):
                 else:
                     try:
                         song = ytmusic.get_song(item)
-                        print('[ OK ] Added song "' + song['videoDetails']['title'] + '"!')
+                        print(f'[ OK ] Added song {song["videoDetails"]["title"]}!')
                     except:
                         print('[ OK ] Added song!')
