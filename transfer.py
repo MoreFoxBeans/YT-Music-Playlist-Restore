@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from ytmusicapi import YTMusic
 import os
 import csv
