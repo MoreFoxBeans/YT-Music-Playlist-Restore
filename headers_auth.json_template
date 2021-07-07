@@ -5,5 +5,5 @@
     "Content-Type": "application/json",
     "X-Goog-AuthUser": "0",
     "x-origin": "https://music.youtube.com",
-    "Cookie" : "PASTE_COOKIE"
+    "Cookie" : "{{cookie}}"
 }
