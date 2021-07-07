@@ -15,6 +15,6 @@ pip3 install --user -r requirements.txt
 
 ## Usage
 * Open your latest Google Takeout in 7-zip or WinRAR or whatever program you use and locate the .csv files for your YouTube Music Playlists.
-* Create a "playlists" folder in your YT-Music-Playlist-Restore folder and copy the csv files into it.
+* Copy the csv files into the playlists folder.
 * Remove any csv files that match playlists that already exist on your account (e.g. "Liked Videos")
 * Run ./transfer.py
