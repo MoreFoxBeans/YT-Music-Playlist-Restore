@@ -1,6 +1,11 @@
 # YouTube Music Playlist Restore
 Easily restore your YouTube Music Playlists from a Google Takeout.
 
+<a href="https://github.com/MoreFoxBeans/YT-Music-Playlist-Restore"><img align="center" src="https://img.shields.io/github/repo-size/morefoxbeans/morefoxbeans.github.io?style=for-the-badge" alt="Repo total file size" /></a>
+<a href="https://github.com/MoreFoxBeans/YT-Music-Playlist-Restore"><img align="center" src="https://img.shields.io/tokei/lines/github/morefoxbeans/morefoxbeans.github.io?style=for-the-badge" alt="Repo total lines of code" /></a>
+<a href="https://github.com/MoreFoxBeans/YT-Music-Playlist-Restore/commit/main"><img align="center" src="https://img.shields.io/github/commit-activity/m/morefoxbeans/morefoxbeans.github.io?style=for-the-badge" alt="Commit frequency" /></a>
+<a href="https://github.com/MoreFoxBeans/YT-Music-Playlist-Restore/releases"><img align="center" src="https://img.shields.io/github/downloads/MoreFoxBeans/YT-Music-Playlist-Restore/total?style=for-the-badge" alt="Total release downloads" /></a>
+
 ## First-time setup
 * Clone this repo
 * Install the required modules:
